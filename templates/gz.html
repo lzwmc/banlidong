@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>板栗洞</title>
+  <link rel="shortcut icon" href="/static/img/server-icon.png" type="image/x-icon">
+  <script src="/static/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <script src="/static/js/bootstrap.min.js"></script>
+  <style>
+    @font-face {
+      font-family: Minecraft;
+      src: url(data:font/woff2;base64,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);
+    }
+
+    body {
+      font-family: Minecraft;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/" style="font-family: Minecraft;">BanliDong</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="http://101.43.228.112/auth/register">加入服务器</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">其他 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/zs/">服务器展示</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/updata/">更新记录</a></li>
+              <li><a href="/pz/">服务器配置</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/gz/">服务器规章</a></li>
+              <li><a href="/ban/">封禁公示</a></li>
+              <li><a href="/gl/">管理团队</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">加群 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" data-toggle="modal" data-target="#myModal">QQ</a></li>
+              <!-- <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li> -->
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">QQ群</h4>
+        </div>
+        <div class="modal-body">
+          <img src="/static/img/1cf9cd17-519f-4e0a-a9ee-4df79cfc1c4a.jpg" alt="QQ">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    #zss row img {
+        width: available-width;
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+  </style>
+  <div class="container" id="zss">
+<h2>第一章 总纲</h2>
+<p>第一条 Banlidong Minecraft 服务器是服主自行搭建的游戏服务器。</p>
+<p>第二条 不分年龄、职业、性别、民族、国籍，服务器允许并欢迎任何Minecraft玩家加入。</p>
+<p>第三条 服务器内玩家一律平等。</p>
+<p>第四条 本条例优先级为最高。若有其他规则文件与本条例相冲突，以本条例为准。</p>
+<p>第五条 服务器的决策方式是民主议会制。任何人不得破坏本制度。</p>
+<p>第六条 服务器的所有权属于服主。</p>
+<p>第七条 服务器的决策权属于议会。</p>
+<p>第八条 服务器虚拟世界内的财产属于服务器共有。</p>
+<h2>第二章 权限</h2>
+<p>第一条 玩家分为服主（SL）、操作员（DEV）、管理员（OP）、普通玩家（SPL）三个等级。三级平等，互相制约。</p>
+<p>第二条 服务器保护并尊重玩家的权利。</p>
+<p>第三条 玩家拥有在服务器内自由游玩、集会，结社，请愿和言论自由的权利。</p>
+<p>第四条 玩家拥有在议会民主决策的权利。</p>
+<p>第五条 任何玩家不得剥夺玩家的权利。</p>
+<h2>第三章 账号和作弊</h2>
+<p>第一条 一个玩家最多只准许拥有2个账号，默认拥有一个生存账号，如有录制需求可联系操作员设置旁观账号；（特殊需求请向操作员申请）
+<p>第二条 普通玩家不得进行任何形式的非法作弊。</p></p>
+<h2>第四章 决议制度</h2>
+<p>第一条 服务器使用非正式议会制度。议会建立在QQ群投票内。</p>
+<p>第二条 一般来说，服务器内凡是重大决定都必须在QQ群内发布投票决定或征得当事者同意。</p>
+<p>第三条 每个玩家都可以平等参与投票。逾期不投票者视为弃权，投票时长不得小于48小时，若平票，否决该议案。玩家不得在5天之内重复提交议案。</p>
+<p>第四条 严禁违反议会统一规定。</p>
+<p>第五条 征得三分之二以上与会成员同意的议案，视为通过。</p>
+<p>第六条 议案投票参与者需占全体成员三分之一或以上。</p>
+<p>第七条 操作员可以随时提交议案。</p>
+<p>第八条 玩家提交议案时，需在大群@所有人</p>
+<p>第九条 2个及以上的玩家可以联合随时提交议案。</p>
+<h2>第五章 区域</h2>
+<p>第一条 玩家可以在主城范围内经允许后建造建筑物。</p>
+<p>第二条 玩家在主城范围内建造，久不完工，影响后续建造或形象的，可以由管理员通知后直接拆除。</p>
+<p>第三条 专为生存玩家游戏所用区域，开发区外的范围称为自然生存区。</p>
+<p>第四条 自然生存区相对自由。玩家对于自然生存区范围内的遗迹与建筑，可以自由的修改与破坏。</p>
+<h2>第六章 言论</h2>
+<p>第一条 服务器尊重并保护玩家的言论自由。</p>
+<p>第二条 玩家严禁发送违反法律的信息。</p>
+<p>第三条 玩家不得在服务器内发布无关广告。</p>
+<p>第四条 玩家不得违规破坏言论环境。</p>
+<p>第五条 玩家不得违规使用特殊字符。</p>
+<h2>第七章 管理员</h2>
+<p>第一条 在服务器内拥有管理员权限的玩家，称为管理员。</p>
+<p>第二条 管理员拥有使用指令的权限。</p>
+<p>第三条 管理员可以在服务器主城内进行建筑。</p>
+<p>第四条 管理员可以使用创造模式权限建造小型建筑群。</p>
+<p>第五条 管理员不得调整玩家权限。</p>
+<p>第六条 管理员没有处罚权，所有违规玩家需要操作员进行处罚（但是可以使用改变自身游戏模式的指令和setblock,fill等操作方块的指令，如要回档请联系操作员）</p>
+<h2>第八章 操作员</h2>
+<p>第一条 操作员是服务器内最高权限。</p>
+<p>第二条 操作员拥有管理员的一切权限。</p>
+<p>第三条 操作员拥有处罚权。</p>
+<p>第四条 操作员拥有对非操作员玩家的权限任免权（除服主）</p>
+<p>第五条 对操作员的提拔与任免，需要服主的同意</p>
+<p>第六条 操作员有义务每周发布处罚日志和操作日志，接受全服玩家的监督</p>
+<h2>第九章 服主</h2>
+<p>第一条 服主拥有整个服务器的一切权力</p>
+<p>第二条 服主需要定期进入服务器以检查服务器的正常运行</p>
+<p>第三条 服主拥有本条例的最终解释权</p>
+<p>第四条 服主有遵守议会制度的义务</p>
+  </div>
+</body>
+</html>

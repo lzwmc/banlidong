@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>板栗洞</title>
+  <link rel="shortcut icon" href="/static/img/server-icon.png" type="image/x-icon">
+  <script src="/static/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <script src="/static/js/bootstrap.min.js"></script>
+  <style>
+    @font-face {
+      font-family: Minecraft;
+      src: url(data:font/woff2;base64,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);
+    }
+
+    body {
+      font-family: Minecraft;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/" style="font-family: Minecraft;">BanliDong</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="http://101.43.228.112/auth/register">加入服务器</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">其他 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/zs/">服务器展示</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/updata/">更新记录</a></li>
+              <li><a href="/pz/">服务器配置</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/gz/">服务器规章</a></li>
+              <li><a href="/ban/">封禁公示</a></li>
+              <li><a href="/gl/">管理团队</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">加群 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#" data-toggle="modal" data-target="#myModal">QQ</a></li>
+              <!-- <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li> -->
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">QQ群</h4>
+        </div>
+        <div class="modal-body">
+          <img src="/static/img/1cf9cd17-519f-4e0a-a9ee-4df79cfc1c4a.jpg" alt="QQ">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    #zss row img {
+        width: available-width;
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+  </style>
+  <div class="container" id="zss">
+    <row>
+        <img src="/static/img/zs/0.png" alt="">
+        <h3>《地狱交通》</h3><p>拍摄者:abc 建造者:111</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/1.png" alt="">
+        <h3>《悬崖峭壁》</h3><p>拍摄者:abc 建造者:None</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/2.png" alt="">
+        <h3>《四合院》</h3><p>拍摄者:abc 建造者:111</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/3.png" alt="">
+        <h3>《生存聚落》</h3><p>拍摄者:abc 建造者:111</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/4.png" alt="">
+        <h3>《通往末地》</h3><p>拍摄者:abc 建造者:xiaofu</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/5.png" alt="">
+        <h3>《PVP场》</h3><p>拍摄者:abc 建造者:xiaofu</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/6.png" alt="">
+        <h3>《主楼与教堂》</h3><p>拍摄者:abc 建造者:xiaofu</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/7.png" alt="">
+        <h3>《海滩》</h3><p>拍摄者:abc 建造者:None</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/8.png" alt="">
+        <h3>《快速熔炉》</h3><p>拍摄者:abc 建造者:Soukg</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/9.png" alt="">
+        <h3>《刷石机》</h3><p>拍摄者:abc 建造者:Soukg</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/10.png" alt="">
+        <h3>《温馨小房》</h3><p>拍摄者:abc 建造者:Soukg</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/11.png" alt="">
+        <h3>《地狱之门》</h3><p>拍摄者:abc 建造者:111</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/12.png" alt="">
+        <h3>《小商店》</h3><p>拍摄者:abc 建造者:111</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/13.png" alt="">
+        <h3>《温馨社区》</h3><p>拍摄者:abc 建造者:111</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/14.png" alt="">
+        <h3>《小黑塔》</h3><p>拍摄者:abc 建造者:gouzheng</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/15.png" alt="">
+        <h3>《末地》</h3><p>拍摄者:abc 建造者:None</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/16.png" alt="">
+        <h3>《四合院2》</h3><p>拍摄者:abc 建造者:111</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/17.png" alt="">
+        <h3>《四合院3》</h3><p>拍摄者:abc 建造者:111</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/18.png" alt="">
+        <h3>《四合院4》</h3><p>拍摄者:abc 建造者:111</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/19.png" alt="">
+        <h3>《四合院5》</h3><p>拍摄者:abc 建造者:111</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/20.png" alt="">
+        <h3>《四合院6》</h3><p>拍摄者:abc 建造者:111</p>
+    </row>
+    <row>
+        <img src="/static/img/zs/21.png" alt="">
+        <h3>《拱桥》</h3><p>拍摄者:abc 建造者:111</p>
+    </row>
+  </div>
+</body>
+</html>
